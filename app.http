@@ -1,0 +1,78 @@
+//API 1 Resgister
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+  "userName": "adam_richard1",
+  "password": "rich5",
+  "name": "Adam Richard",
+  "gender":"male"
+}
+
+// JWT-TOKEN:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjczMjYxOTkzfQ.4wc2BHBfQTcaPlM3iH_X0wjT-P7yW5IOUZ6So25rV6Y
+
+//API 2 //Login 
+### 
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+   "username":"JoeBiden",
+  "password":"biden@123"
+}
+###
+//API 3 get latest tweets of people user follows
+
+GET  http://localhost:3000/user/tweets/feed/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjczMjYxOTkzfQ.4wc2BHBfQTcaPlM3iH_X0wjT-P7yW5IOUZ6So25rV6Y
+
+###
+//API 4 list of people user follow
+GET http://localhost:3000/user/following/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjczMjYxOTkzfQ.4wc2BHBfQTcaPlM3iH_X0wjT-P7yW5IOUZ6So25rV6Y
+
+###
+//API 5 list of people who follow user 
+GET http://localhost:3000/user/followers/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjczMjYxOTkzfQ.4wc2BHBfQTcaPlM3iH_X0wjT-P7yW5IOUZ6So25rV6Y
+
+###
+//API 6 
+
+GET http://localhost:3000/tweets/2/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjczMjYxOTkzfQ.4wc2BHBfQTcaPlM3iH_X0wjT-P7yW5IOUZ6So25rV6Y
+
+
+###
+//API 7
+GET http://localhost:3000/tweets/1/likes/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjczMjYxOTkzfQ.4wc2BHBfQTcaPlM3iH_X0wjT-P7yW5IOUZ6So25rV6Y
+
+
+### 
+//API 8
+GET http://localhost:3000/tweets/1/replies/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjczMjYxOTkzfQ.4wc2BHBfQTcaPlM3iH_X0wjT-P7yW5IOUZ6So25rV6Y
+
+###
+//API 9
+GET http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjczMjYxOTkzfQ.4wc2BHBfQTcaPlM3iH_X0wjT-P7yW5IOUZ6So25rV6Y
+
+
+###
+//API 10
+POST http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjczMjYxOTkzfQ.4wc2BHBfQTcaPlM3iH_X0wjT-P7yW5IOUZ6So25rV6Y
+Content-Type: application/json
+
+{
+   "tweet": "The Moon lit Mounika reddy..."
+
+}
+
+
+###
+//API 11
+DELETE http://localhost:3000/tweets/15/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjczMjYxOTkzfQ.4wc2BHBfQTcaPlM3iH_X0wjT-P7yW5IOUZ6So25rV6Y
